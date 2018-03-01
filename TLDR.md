@@ -55,23 +55,7 @@ In short:
 
 
 
-## writing performant python 
 
-dont use nested loops
-
-use vectorized code and try not to iterate each row of a dataframe for example
-
-lists are convenient but slow
-
-use numpy / scipy as much as possible . DO NOT REINVENT THE WHEEL
-
-if numpy / scipy does not have what you want roll your own functions.
-
-if you have loops that run many times, 
-(eg. at each word , at each row of a big dataframe)
-be very careful of what you put in that loop. This is the hotspot that needs optimizing. Inside that inner loop have only things that are calculated and not other things that dont change and could be easily located outside the loop. 
-
-instead of loops try to use 'map' 
 
 
 ## jit compilers 
@@ -85,17 +69,69 @@ Numba works by generating optimized machine code using the [LLVM compiler infras
 Numba is useful for the kind of functions involving calculations with arrays and loops that are not availiable in Numpy for example. Sometime Numba is not able to speed up a function and then falls back to normal python.
 
 ## memoizing
-Memoization is a way of caching the results of a function call.
 
-If a function is memoized, evaluating it is simply a matter of looking up the result you got the first time the function was called with those parameters. 
+* Memoization is a way of caching the results of a function call. 
 
-This is recorded in the memoization cache. If the lookup fails, that’s because the function has never been called with those parameters. 
+* If a function is memoized, evaluating it is simply a matter of looking up the result you got the first time the function was called with those parameters. 
+
+* This is recorded in the memoization cache. If the lookup fails, that’s because the function has never been called with those parameters. 
 Only then do you need to run the function itself.
+
+(reminder: numba cannot handle recursive functions so this is a way to speed them up)
 
 
 ## Cython 
 
 [Cython](cython.org) implements a superset of the Python language with which you are able to write C and C++ modules for Python. Cython also allows you to call functions from compiled C libraries. Using Cython allows you to take advantage of Python’s strong typing of variables and operations.
+
+
+
+## TLDR! i dont care for the technical stuff above! can you provide some quick tips for writing performant python?
+
+OK!
+
+
+
+
+* use vectorized code and try not to iterate each row of a dataframe for example
+
+
+
+* use numpy / scipy as much as possible . DO NOT REINVENT THE WHEEL
+
+* if numpy / scipy does not have what you want roll your own functions.
+
+* if you have loops that run many times, 
+(eg. at each word , at each row of a big dataframe)
+be very careful of what you put in that loop. This is the hotspot that needs optimizing. Inside that inner loop have only things that are calculated and not other things that dont change and could be easily located outside the loop. 
+
+* instead of loops try to use 'map' 
+
+* try Numba. perhaps you will see improvement. Just read the documentation first !!!
+
+* dont use nested loops . unless you use them with numba.
+
+* recursive functions or lookup tables? look up memoization
+
+* like mixing C & python? use Cython! 
+
+* python lists are convenient but slow . C arrays are fast but ugly. choose wisely
+
+
+
+
+## What about R?
+
+Sorry not much time for R . Perhaps someone can add some? however some quick suggestions:
+
+recommended profiler : profvis
+
+recommended way of speeding up code : Rccp. beware of learning curve however.
+
+
+
+
+
 
 
 ## Useful references
