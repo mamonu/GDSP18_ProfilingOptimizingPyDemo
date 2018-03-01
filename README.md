@@ -9,7 +9,7 @@
 
 a very quick demo of some ways to identify bottlenecks in Python code and ways to speed up these hotspots.
 
-<img src="cython_annotation.png" alt="Drawing" style="width: 400px;"/>
+<img src="cython_annotation.png" alt="cython" style="width: 150px;"/>
 
 
 
