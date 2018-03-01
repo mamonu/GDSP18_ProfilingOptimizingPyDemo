@@ -2,7 +2,8 @@
 
 ## GDSP Conference 2018
 
-#### T. Manassis     [_TheodoreM_](https://twitter.com/_TheodoreM_) on twitter 
+#### T. Manassis    
+##### [_TheodoreM_](https://twitter.com/_TheodoreM_) on ![twitter](http://www.islandcarcentre.co.uk/wp-content/uploads/2016/03/t_small-a.png "twitter")
 
 #### Big Data team , ONS
 
