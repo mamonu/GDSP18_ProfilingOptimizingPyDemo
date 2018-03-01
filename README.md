@@ -2,7 +2,7 @@
 
 ## GDSP Conference 2018
 
-#### T. Manassis
+#### T. Manassis     [_TheodoreM_](https://twitter.com/_TheodoreM_) on twitter 
 
 #### Big Data team , ONS
 
