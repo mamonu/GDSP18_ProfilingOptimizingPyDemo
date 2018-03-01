@@ -10,6 +10,9 @@
 #### a very quick demo of some ways to identify bottlenecks in Python code and ways to speed up these hotspots.
 
 
+
+![plot](plain-numba-cython.png "plot")
+
 this repo includes :
 
 * [jupyter notebook](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/profiling.ipynb) with code and some comments
