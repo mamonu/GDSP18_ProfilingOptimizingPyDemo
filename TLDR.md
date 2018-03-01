@@ -58,9 +58,12 @@ In short:
 
 
 
-## JIT compilers : the case of [Numba](https://numba.pydata.org/)
+## [JIT compilers](https://en.wikipedia.org/wiki/Just-in-time_compilation) : the case of [Numba](https://numba.pydata.org/)
 
-    A [Just-In-Time compiler](https://en.wikipedia.org/wiki/Just-in-time_compilation) runs after the program has started and compiles the code (usually bytecode or some kind of VM instructions) on the fly (or just-in-time, as it's called) into a form that's usually faster, typically the host CPU's native instruction set. A JIT has access to dynamic runtime information whereas a standard compiler doesn't and can make better optimizations like inlining functions that are used frequently.
+    A *Just-In-Time* compiler runs after the program has started and compiles the code (usually bytecode or some kind of VM instructions) on the fly
+    (or just-in-time, as it's called) into a form that's usually faster, typically the host CPU's native instruction set. 
+    A JIT has access to dynamic runtime information whereas a standard compiler doesn't 
+    and can make better optimizations like inlining functions that are used frequently.
 
     This is in contrast to a traditional compiler that compiles all the code to machine language before the program is first run.
 
