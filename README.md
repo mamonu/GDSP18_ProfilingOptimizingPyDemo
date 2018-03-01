@@ -13,6 +13,7 @@ this repo includes :
 
 * jupyter notebook with code and some explanations
 * Text version overview
+* jupyter notebook with cython and numba example
 
 
 Feel free to fork , add content and then do a pull request

@@ -85,6 +85,7 @@ Only then do you need to run the function itself.
 (reminder: numba cannot handle recursive functions so this is a way to speed them up)
 
 
+
 ## Cython 
 
 [Cython](http://cython.org) implements a superset of the Python language with which you are able to write C and C++ modules for Python. Cython also allows you to call functions from compiled C libraries. Using Cython allows you to take advantage of Python’s strong typing of variables and operations.
