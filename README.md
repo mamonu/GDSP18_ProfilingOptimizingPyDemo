@@ -11,9 +11,9 @@
 
 this repo includes :
 
-* jupyter notebook with code and some explanations
-* Text version overview
-* jupyter notebook with cython and numba example
+* [jupyter notebook](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/profiling.ipynb) with code and some comments
+* Text version [overview](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/TLDR.md)
+* jupyter notebook with cython and numba [example](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/Cython_examples.ipynb)
 
 
 Feel free to fork , add content and then do a pull request
