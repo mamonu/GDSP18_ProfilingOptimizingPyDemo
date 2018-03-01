@@ -7,17 +7,26 @@
 
 #### Big Data team , ONS
 
-#### a very quick demo of some ways to identify bottlenecks in Python code and ways to speed up these hotspots.
+a very quick demo of some ways to identify bottlenecks in Python code and ways to speed up these hotspots.
+
+<img src="cython_annotation.png" alt="Drawing" style="width: 400px;"/>
 
 
 
-![plot](plain-numba-cython.png "plot")
+
 
 this repo includes :
 
 * [jupyter notebook](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/profiling.ipynb) with code and some comments
 * Text version [overview](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/TLDR.md)
-* jupyter notebook with cython and numba [example](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/Cython_examples.ipynb)
+* jupyter notebook with plain python , cython and numba example [comparison](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/Cython_examples.ipynb)
+
+![plot](plain-numba-cython.png "plot")
 
 
 Feel free to fork , add content and then do a pull request
+
+
+
+
+
