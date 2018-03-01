@@ -48,7 +48,7 @@ In short:
 
     Get it running.
     Test it's doing what its supposed to do.
-    time/profile if slow.
+    Time/profile if slow.
     Optimise.
     Repeat from 2. 
 
@@ -58,11 +58,13 @@ In short:
 
 
 
-## jit compilers 
+## JIT compilers : the case of [Numba](https://numba.pydata.org/)
 
+    A [Just-In-Time compiler](https://en.wikipedia.org/wiki/Just-in-time_compilation) runs after the program has started and compiles the code (usually bytecode or some kind of VM instructions) on the fly (or just-in-time, as it's called) into a form that's usually faster, typically the host CPU's native instruction set. A JIT has access to dynamic runtime information whereas a standard compiler doesn't and can make better optimizations like inlining functions that are used frequently.
 
+    This is in contrast to a traditional compiler that compiles all the code to machine language before the program is first run.
 
-Numba gives you the power to speed up your applications with high performance functions written directly in Python. With a few annotations, array-oriented and math-heavy Python code can be just-in-time compiled to native machine instructions, similar in performance to C, C++ and Fortran, without having to switch languages or Python interpreters.
+Numba, a Python JIT compiler gives you the power to speed up your applications with high performance functions written directly in Python. With a few annotations, array-oriented and math-heavy Python code can be just-in-time compiled to native machine instructions, similar in performance to C, C++ and Fortran, without having to switch languages or Python interpreters.
 
 Numba works by generating optimized machine code using the [LLVM compiler infrastructure](https://en.wikipedia.org/wiki/LLVM) at import time, runtime, or statically (using the included pycc tool). Numba supports compilation of Python to run on either CPU or GPU hardware, and is designed to integrate with the Python scientific software stack.
 
@@ -82,7 +84,7 @@ Only then do you need to run the function itself.
 
 ## Cython 
 
-[Cython](cython.org) implements a superset of the Python language with which you are able to write C and C++ modules for Python. Cython also allows you to call functions from compiled C libraries. Using Cython allows you to take advantage of Python’s strong typing of variables and operations.
+[Cython](http://cython.org) implements a superset of the Python language with which you are able to write C and C++ modules for Python. Cython also allows you to call functions from compiled C libraries. Using Cython allows you to take advantage of Python’s strong typing of variables and operations.
 
 
 
@@ -102,16 +104,16 @@ OK!
 * if numpy / scipy does not have what you want roll your own functions.
 
 * if you have loops that run many times, 
-(eg. at each word , at each row of a big dataframe)
+(eg. at each and every word , at each row of a big dataframe)
 be very careful of what you put in that loop. This is the hotspot that needs optimizing. Inside that inner loop have only things that are calculated and not other things that dont change and could be easily located outside the loop. 
 
 * instead of loops try to use 'map' 
 
 * try Numba. perhaps you will see improvement. Just read the documentation first !!!
 
-* dont use nested loops . unless you use them with numba.
+* dont use nested loops . unless you use them with numba (in which case try them because you might even get a speedup).
 
-* recursive functions or lookup tables? look up memoization
+* recursive functions or lookup tables? have a look at memoization
 
 * like mixing C & python? use Cython! 
 
