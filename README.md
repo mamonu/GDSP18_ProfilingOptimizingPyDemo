@@ -25,6 +25,8 @@ this repo includes :
 
 ![plot](quicksortpynumba.png "plot")
 
+![plot](bubblepynumba.png "plot")
+
 Feel free to fork , add content and then do a pull request
 
 
