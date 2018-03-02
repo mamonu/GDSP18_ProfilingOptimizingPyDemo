@@ -21,8 +21,9 @@ this repo includes :
 * Text version [overview](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/TLDR.md)
 * jupyter notebook with plain python , cython and numba example [comparison](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/Cython_examples.ipynb)
 
-![plot](plain-numba-cython.png "plot")
+![plot](plain-numba-cython1.png "plot")
 
+![plot](quicksortpynumba.png "plot")
 
 Feel free to fork , add content and then do a pull request
 
