@@ -27,6 +27,9 @@ this repo includes :
 
 ![plot](bubblepynumba.png "plot")
 
+
+![plot](arraysum.png "plot")
+
 Feel free to fork , add content and then do a pull request
 
 
