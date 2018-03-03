@@ -17,9 +17,10 @@ a very quick demo of some ways to identify bottlenecks in Python code and ways t
 
 this repo includes :
 
-* [jupyter notebook](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/profiling.ipynb) with code and some comments
-* Text version [overview](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/TLDR.md)
-* jupyter notebook with plain python , cython and numba example [comparison](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/Cython_examples.ipynb)
+* [jupyter notebook](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/01-profiling.ipynb) with code and some comments
+* Text version [overview](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/00-TLDR.md)
+* jupyter notebook with plain python , cython and numba example [comparison](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/03-Cython_examples.ipynb)
+* jupyter notebook with showing how to include fortran code to be called as a python functionon a notebook [comparison](https://github.com/ONSBigData/GDSP18_ProfilingOptimizingPyDemo/blob/master/04-fortran_in_python.ipynb)
 
 ![plot](plain-numba-cython1.png "plot")
 
